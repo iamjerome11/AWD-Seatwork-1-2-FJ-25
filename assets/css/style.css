@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10rem;
+}
+video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+}
+header{
+      background: linear-gradient(to right, transparent, transparent); 
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10); 
+      position: fixed; 
+      width: 100%; 
+      top: 0;
+      z-index: 1000;
+      transition: background 0.3s ease-in-out; 
+      left: 0;
+  }
+  
+.header:hover {
+      background: linear-gradient(to right, transparent, transparent); 
+  }
+  
+header nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-left: 10px;
+  }
+  
+  header nav ul li {
+      margin: 0 15px;
+  }
+  
+  .button-74 {
+    background-color: #FF00BF;
+    border: 2px solid #452c63;
+    border-radius: 30px;
+    box-shadow: black 4px 4px 0 0;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600px;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+.button-74:hover {
+    background-color: black;
+  }
+
+@media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+}
+h1{
+    color: white;
+    padding-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    border-radius: 100%;
+
+}
+
+h1 button{
+  background-color: #FF00BF;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 12px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+h1 button:hover{
+  background-color: black;
+}
+

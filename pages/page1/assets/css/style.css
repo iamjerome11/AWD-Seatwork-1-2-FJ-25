@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container ul li a{
+    font-size: 1.8rem;
+}
+
+.container ul li a button{
+    font-size: large;
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600px;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.container ul li a button:hover {
+    background-color: #89CFF0;
+  }
+
+@media (min-width: 768px) {
+    .button {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #7CB9E8;
+}
+
+/* Header */
+header {
+    background: #7CB9E8;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+/* Add padding to prevent fixed header overlap */
+body {
+    padding-top: 50px;
+}
+
+/* Home Section */
+#home {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+#cars {
+    background: #1f2937;
+    color: #fff;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+#cars h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#cars .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cars .grid div {
+    background: #374151;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+#cars .grid .available{
+    color: #7CB9E8;
+}
+
+#cars .grid div:hover {
+    transform: scale(1.05);
+}
+
+#cars img {
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#rental {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#rental h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#rental form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#rental select,
+#rental button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#rental select {
+    background: #1f2937;
+    color: #fff;
+}
+
+#rental button {
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#rental button:hover {
+    background: #005f99;
+    color: white;
+}
+
+#rentalMessage {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    width: 100%;
+}
