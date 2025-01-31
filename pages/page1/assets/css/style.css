@@ -136,6 +136,7 @@ body {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 #cars .grid div {
@@ -160,6 +161,13 @@ body {
     width: 100%;
 }
 
+video{
+    width: 100%;
+    max-height: 300px; /* Set a max height */
+    object-fit: cover;
+    margin-bottom: 20px; /* Add space below the video */
+    
+}
 #rental {
     padding: 50px 20px;
     text-align: center;
