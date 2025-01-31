@@ -45,15 +45,15 @@ header nav ul {
   }
   
   .button-74 {
-    background-color: #FF00BF;
+    background-color: transparent;
     border: 2px solid #452c63;
     border-radius: 30px;
     box-shadow: black 4px 4px 0 0;
-    color: white;
+    color: #FFFDD0;
     cursor: pointer;
     display: inline-block;
-    font-weight: 600px;
-    font-size: 18px;
+    font-weight: bold 800px;
+    font-size: 1.5rem;
     padding: 0 18px;
     line-height: 50px;
     text-align: center;
@@ -74,7 +74,7 @@ header nav ul {
     }
 }
 h1{
-    color: white;
+    color: #FFFDD0;
     padding-top: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 45px;
@@ -83,12 +83,12 @@ h1{
 }
 
 h1 button{
-  background-color: #FF00BF;
+  background-color: transparent;
   border-radius: 20px;
-  color: white;
+  color: #FFFDD0;
   cursor: pointer;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1rem;
   padding: 0 12px;
   line-height: 30px;
   text-align: center;
