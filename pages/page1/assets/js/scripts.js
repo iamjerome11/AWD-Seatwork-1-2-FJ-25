@@ -5,7 +5,7 @@ const cars = [
     { id: 4, name: "McLaren 720S", available: true },
     { id: 5, name: "Bugatti Chiron", available: true },
     { id: 6, name: "Toyota Supra", available: true },
-    { id: 7, name: "Mitsubishi Eclipse-Gsx", available: true },
+    { id: 7, name: "Mitsubishi Eclipse", available: true },
     { id: 8, name: "Mercedes Benz", available: true },
     { id: 9, name: "Audi RS7", available: true },
     { id: 10, name: "Nissan GT-R", available: true },
