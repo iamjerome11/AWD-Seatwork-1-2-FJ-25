@@ -139,7 +139,7 @@ body {
 
 /* Cars Section */
 #cars {
-    background-color: #1B1212 ;
+    background-color:#242424 ;
     color: #fff;
     padding: 50px 20px;
     width: 100%;
@@ -172,7 +172,7 @@ video{
 #rental {
     padding: 50px 20px;
     text-align: center;
-    background-color: 	#28282B;
+    background-color: #242424;
 }
 
 #rental h2 {
@@ -201,7 +201,7 @@ video{
 }
 
 #rental select {
-    background: #1f2937;
+    background: #242424;
     color: #fff;
 }
 
@@ -214,7 +214,7 @@ video{
 }
 
 #rental button:hover {
-    background: #005f99;
+    background: 	#353935;
     color: white;
 }
 
@@ -223,6 +223,9 @@ video{
     margin-top: 20px;
 }
 
+.unavailable {
+    color: red; 
+}
 /* Contact Section */
 #contact {
     background: black;

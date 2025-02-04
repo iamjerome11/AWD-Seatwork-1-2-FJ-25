@@ -10,7 +10,7 @@ const cars = [
     { id: 9, name: "Audi RS7", available: true },
     { id: 10, name: "Nissan GT-R", available: true },
     { id: 11, name: "Black Car", available: true },
-    { id: 12, name: "Koenigsegg Jesko", available: true },
+    { id: 12, name: "Dodge Charger", available: true },
 ];
 
 document.getElementById("rentCar").addEventListener("click", () => {
@@ -29,11 +29,22 @@ document.getElementById("rentCar").addEventListener("click", () => {
     if (car.available) {
         car.available = false;
         rentalMessage.textContent = `You have successfully rented the ${car.name}. Enjoy your ride!`;
-        rentalMessage.style.color = "black";
+        rentalMessage.style.color = "white";
+
+        // Update the status in the HTML
+        const carElements = document.querySelectorAll('#cars .grid div');
+        carElements.forEach(element => {
+            if (element.querySelector('h3').textContent === car.name) {
+                element.querySelector('p span').classList.remove('available');
+                element.querySelector('p span').classList.add('unavailable');
+                element.querySelector('p span').textContent = "Unavailable";
+            }
+        });
+
         carSelect.options[carSelect.selectedIndex].textContent += " (Rented)";
         carSelect.options[carSelect.selectedIndex].disabled = true; 
     } else {
         rentalMessage.textContent = `Sorry, the ${car.name} is currently unavailable.`;
-        rentalMessage.style.color = "#dc3545"; 
+        rentalMessage.style.color = "red"; 
     }
 });
