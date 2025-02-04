@@ -158,9 +158,19 @@ body {
     color: #7CB9E8;
 }
 
-
-
-
+#cars .container .grid button{
+    color: white;
+    background-color: #242424;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0 10px;
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
 video{
     width: 100%;
