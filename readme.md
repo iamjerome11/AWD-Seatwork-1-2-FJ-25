@@ -5,8 +5,6 @@
 <br />
 <div align="center">
   <a href="https://github.com/iamjerome11/AWD-Seatwork-1-2-FJ-25">
-  
-    <img src="./assets/img/bmw bg.mp4" alt="Nyebe" width="130" height="100">
   </a>
   <h3 align="center">Demonstration of Car Rental System</h3>
 </div>
@@ -28,7 +26,7 @@
 
 
 <details>
-  <summary>Demonstration of Car Rental System using Javascript</summary>
+  <summary>Demonstration of Car Rental System using Javascriptt</summary>
   <ol>
     <li>
       <a href="#overview">Overview</a>
@@ -60,8 +58,8 @@ This is my project about the car rental system
 Guiding Question:
 - What is the project - This is all about the Car Rental System using HTML, CSS, and JAVASCRIPT
 - Whats the purpose - The purpose of this project is to show how Car Rental System work using Javascript
-- What are key components
-- What technology used and how it is used
+
+
 
 ### Key Components
 
