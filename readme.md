@@ -4,34 +4,31 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/iamjerome11/AWD-Seatwork-1-2-FJ-25">
+  
+    <img src="./assets/img/bmw bg.mp4" alt="Nyebe" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Demonstration of Car Rental System</h3>
 </div>
-<!-- TODO: Make a short description -->
+
 <div align="center">
-  Short Description. (Optional)
+  This is my project about Car Rental System
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+![](https://visit-counter.vercel.app/counter.png?page=iamjerome11/WD-Template-Project)
 
+[![wakatime](https://wakatime.com/badge/user/76036f67-37f4-4e34-a329-cfc10ff3d7ca/project/acac54c2-a7ea-40cd-aeb0-8f6b856291ec.svg)](https://wakatime.com/badge/user/76036f67-37f4-4e34-a329-cfc10ff3d7ca/project/acac54c2-a7ea-40cd-aeb0-8f6b856291ec)
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
+
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Demonstration of Car Rental System using Javascript</summary>
   <ol>
     <li>
       <a href="#overview">Overview</a>
@@ -57,25 +54,25 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-Description of the project in details.
+
+This is my project about the car rental system
 
 Guiding Question:
-- What is the project
-- Whats the purpose
+- What is the project - This is all about the Car Rental System using HTML, CSS, and JAVASCRIPT
+- Whats the purpose - The purpose of this project is to show how Car Rental System work using Javascript
 - What are key components
 - What technology used and how it is used
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
+
+
+- MultiPage Website
 - Parallax transition
 - Transactional
 
 ### Technology
-<!-- TODO: List of Technology Used -->
+
+
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
@@ -116,7 +113,7 @@ WD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
+
 | Title | Purpose | Link |
 |-|-|-|
 | Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |

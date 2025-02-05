@@ -223,15 +223,6 @@ video{
     transition: background 0.3s;
 }
 
-#rental button:hover {
-    background: #353935;
-    color: white;
-}
-
-#rentalMessage {
-    font-weight: bold;
-    margin-top: 20px;
-}
 
 #rental input[type="date"],
 #rental input[type="time"],
@@ -268,7 +259,7 @@ video{
 
 
 #rental button {
-    background: #353935;
+    background: #242424;
     color: black;
     cursor: pointer;
     font-weight: bold;
