@@ -21,9 +21,7 @@ This is my work about Car Rental System
 
 ![](https://visit-counter.vercel.app/counter.png?page=iamjerome11/WD-Template-Project)
 
-[![wakatime](https://wakatime.com/badge/user/76036f67-37f4-4e34-a329-cfc10ff3d7ca/project/
-acac54c2-a7ea-40cd-aeb0-8f6b856291ec.svg)](https://wakatime.com/badge/user/76036f67-37f4-4e34
--a329-cfc10ff3d7ca/project/acac54c2-a7ea-40cd-aeb0-8f6b856291ec)
+[![wakatime](https://wakatime.com/badge/user/76036f67-37f4-4e34-a329-cfc10ff3d7ca/project/09f6f072-b2e2-4966-aa7d-1e10f9ae9ef1.svg)](https://wakatime.com/badge/user/76036f67-37f4-4e34-a329-cfc10ff3d7ca/project/09f6f072-b2e2-4966-aa7d-1e10f9ae9ef1)
 
 ---
 
