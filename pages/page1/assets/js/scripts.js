@@ -22,14 +22,14 @@ function loadCarAvailability() {
         }
     });
 
-    // Update the displayed status in the UI
+
     const carDivs = document.querySelectorAll("#cars .grid div");
     carDivs.forEach(div => {
         const carName = div.querySelector("h3").textContent;
         const car = cars.find(car => car.name === carName);
         if (car && !car.available) {
-            div.querySelector(".available").textContent = "Unavailable"; // Change text to "Unavailable"
-            div.querySelector(".available").style.color = "red"; // Change the color to red
+            div.querySelector(".available").textContent = "Unavailable";
+            div.querySelector(".available").style.color = "red";
         }
     });
 }
@@ -76,9 +76,9 @@ document.getElementById("rentCar").addEventListener("click", () => {
         return;
     }
 
-    // Change status to unavailable
+
     selectedCar.available = false;
-    saveRentedCar(selectedCarId); // Save to local storage
+    saveRentedCar(selectedCarId);
 
     const rentalPrice = selectedCar.price;
 
@@ -88,13 +88,13 @@ document.getElementById("rentCar").addEventListener("click", () => {
     const receiptDetails = document.getElementById("receiptDetails");
     receiptDetails.textContent = `Car: ${selectedCar.name}\nDate: ${selectedDate}\nTime: ${selectedTime}\nYear: ${selectedYear}\nPrice: $${rentalPrice}`;
 
-    // Update the displayed status
+
     const carDivs = document.querySelectorAll("#cars .grid div");
     carDivs.forEach(div => {
         const carName = div.querySelector("h3").textContent;
         if (carName === selectedCar.name) {
-            div.querySelector(".available").textContent = "Unavailable"; // Change text to "Unavailable"
-            div.querySelector(".available").style.color = "red"; // Change the color to red
+            div.querySelector(".available").textContent = "Unavailable";
+            div.querySelector(".available").style.color = "red";
         }
     });
 
