@@ -168,6 +168,11 @@ body {
     touch-action: manipulation;
 }
 
+.available {
+    color: #6CB4EE; 
+    font-weight: bold; 
+}
+
 video{
     width: 100%;
     max-height: 300px;
