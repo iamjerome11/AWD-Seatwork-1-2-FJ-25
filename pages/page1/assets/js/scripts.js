@@ -13,18 +13,16 @@ const cars = [
     { id: 12, name: "Dodge Charger", available: true, price: 180 },
 ];
 
-// Load availability data from localStorage
 function loadCarAvailability() {
     const rentedCars = JSON.parse(localStorage.getItem("rentedCars")) || [];
 
     cars.forEach(car => {
         if (rentedCars.includes(car.id)) {
-            car.available = false;  // Set car as unavailable if it's rented
+            car.available = false;
         }
     });
 }
 
-// Save rented car data to localStorage
 function saveRentedCar(carId) {
     let rentedCars = JSON.parse(localStorage.getItem("rentedCars")) || [];
     if (!rentedCars.includes(carId)) {

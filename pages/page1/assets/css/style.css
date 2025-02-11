@@ -154,10 +154,6 @@ body {
     transition: transform 0.3s;
 }
 
-#cars .grid .available {
-    color: #7CB9E8;
-}
-
 #cars .container .grid button{
     color: white;
     background-color: #242424;
@@ -255,15 +251,6 @@ video{
     color: black;
     font-size: 17px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-#rental button {
-    background: #242424;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
 }
 
 #rental button:hover {
