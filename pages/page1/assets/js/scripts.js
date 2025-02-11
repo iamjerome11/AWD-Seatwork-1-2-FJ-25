@@ -13,6 +13,28 @@ const cars = [
     { id: 12, name: "Dodge Charger", available: true, price: 180 },
 ];
 
+// Load availability data from localStorage
+function loadCarAvailability() {
+    const rentedCars = JSON.parse(localStorage.getItem("rentedCars")) || [];
+
+    cars.forEach(car => {
+        if (rentedCars.includes(car.id)) {
+            car.available = false;  // Set car as unavailable if it's rented
+        }
+    });
+}
+
+// Save rented car data to localStorage
+function saveRentedCar(carId) {
+    let rentedCars = JSON.parse(localStorage.getItem("rentedCars")) || [];
+    if (!rentedCars.includes(carId)) {
+        rentedCars.push(carId);
+    }
+    localStorage.setItem("rentedCars", JSON.stringify(rentedCars));
+}
+
+loadCarAvailability();
+
 const modal = document.getElementById("receiptModal");
 const closeButton = document.querySelector(".close-button");
 
@@ -21,7 +43,6 @@ document.getElementById("rentCar").addEventListener("click", () => {
     const selectedCarId = parseInt(carSelect.value);
     const rentalMessage = document.getElementById("rentalMessage");
 
-    // Get date, time, and year inputs
     const selectedDate = document.getElementById("date").value;
     const selectedTime = document.getElementById("time").value;
     const selectedYear = document.getElementById("year").value;
@@ -33,56 +54,40 @@ document.getElementById("rentCar").addEventListener("click", () => {
     }
 
     if (!selectedDate || !selectedTime || !selectedYear) {
-        rentalMessage.textContent = "Please fill out all fields for date, time, and year.";
+        rentalMessage.textContent = "Please fill in all rental details.";
         rentalMessage.style.color = "red";
         return;
     }
 
-    const car = cars.find(c => c.id === selectedCarId);
-
-    if (car.available) {
-        car.available = false;
-        rentalMessage.textContent = `You have successfully rented the ${car.name} on ${selectedDate} at ${selectedTime} for the year ${selectedYear}. Enjoy your ride!`;
-        rentalMessage.style.color = "white";
-
-        // Update the status in the HTML
-        const carElements = document.querySelectorAll('#cars .grid div');
-        carElements.forEach(element => {
-            if (element.querySelector('h3').textContent === car.name) {
-                element.querySelector('p span').classList.remove('available');
-                element.querySelector('p span').classList.add('unavailable');
-                element.querySelector('p span').textContent = "Unavailable";
-            }
-        });
-
-        carSelect.options[carSelect.selectedIndex].textContent += " (Rented)";
-        carSelect.options[carSelect.selectedIndex].disabled = true; 
+    const selectedCar = cars.find(car => car.id === selectedCarId);
 
 
-        const totalCost = car.price; 
-        const receiptDetails = document.getElementById("receiptDetails");
-        receiptDetails.innerHTML = `
-            Car: ${car.name}<br>
-            Date: ${selectedDate}<br>
-            Time: ${selectedTime}<br>
-            Year: ${selectedYear}<br>
-            Total Cost: $${totalCost}<br>
-        `;
-        modal.style.display = "block"; 
-    } else {
-        rentalMessage.textContent = `Sorry, the ${car.name} is currently unavailable.`;
+    if (!selectedCar.available) {
+        rentalMessage.textContent = "Sorry, this car is already rented.";
         rentalMessage.style.color = "red";
+        return;
     }
+
+    const rentalPrice = selectedCar.price;
+
+    rentalMessage.textContent = `You have rented a ${selectedCar.name} on ${selectedDate} at ${selectedTime}. Your rental fee is $${rentalPrice}.`;
+    rentalMessage.style.color = "white";
+
+    const receiptDetails = document.getElementById("receiptDetails");
+    receiptDetails.textContent = `Car: ${selectedCar.name}\nDate: ${selectedDate}\nTime: ${selectedTime}\nYear: ${selectedYear}\nPrice: $${rentalPrice}`;
+
+    modal.style.display = "block";
+
 });
 
-// Close the modal when the close button is clicked
 closeButton.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// Close the modal when clicking outside of it
 window.addEventListener("click", (event) => {
     if (event.target === modal) {
         modal.style.display = "none";
     }
 });
+
+

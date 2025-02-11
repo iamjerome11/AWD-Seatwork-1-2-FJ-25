@@ -309,9 +309,6 @@ video{
     text-decoration: none;
     cursor: pointer;
 }
-.unavailable {
-    color: red; 
-}
 
 #contact {
     background: black;
@@ -338,5 +335,4 @@ footer{
     font-size: 1rem;
     width: 100%;
 }
-
 
